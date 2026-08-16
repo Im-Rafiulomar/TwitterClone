@@ -2,15 +2,17 @@
 {
     public class Message
     {
-        private Guid _messageId;
+        private Guid _id; // Class unique id
         private string _messageText;
-        private DateTime _messageTime;
-        public Message() { 
-            _messageId = Guid.NewGuid();
+        private DateTime _messageAt;
+        public Message(string _messageText) { 
+            _id = Guid.NewGuid();
+            this._messageText = _messageText;
+            this._messageAt = DateTime.Now;
         }
-        public Guid MessageId
+        public Guid Id
         {
-            get { return _messageId; }
+            get { return _id; }
         }
 
         public string MessageText {
@@ -18,9 +20,9 @@
             set { _messageText = value; }
         }
 
-        public DateTime MessageTime { 
-            get { return _messageTime; }
-            set { _messageTime = value; }
+        public DateTime MessageAt { 
+            get { return _messageAt; }
+            set { _messageAt = value; }
         }
     }
 }
