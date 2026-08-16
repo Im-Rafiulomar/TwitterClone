@@ -4,6 +4,9 @@
         private Guid _authorId;
         private string _content;
 
+        public Tweet() { 
+            _id = Guid.NewGuid();
+        }
         public Guid Id {
             get { return _id; }
         }

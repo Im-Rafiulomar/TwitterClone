@@ -6,6 +6,9 @@
         private Guid _authorId;
         private string _content;
 
+        public ReTweet() { 
+            _tweetId = Guid.NewGuid();
+        }
         public Guid TweetId
         {
             get { return _tweetId; }

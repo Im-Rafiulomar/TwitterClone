@@ -5,7 +5,9 @@
         private Guid _messageId;
         private string _messageText;
         private DateTime _messageTime;
-
+        public Message() { 
+            _messageId = Guid.NewGuid();
+        }
         public Guid MessageId
         {
             get { return _messageId; }

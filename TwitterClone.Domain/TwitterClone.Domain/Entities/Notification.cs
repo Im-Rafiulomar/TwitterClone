@@ -4,7 +4,9 @@
     {
         private Guid _notificationId;
         private string _notificationContent;
-
+        public Notification() { 
+            _notificationId = Guid.NewGuid();
+        }
         public Guid NotificationId{
             get { return _notificationId; }
         }

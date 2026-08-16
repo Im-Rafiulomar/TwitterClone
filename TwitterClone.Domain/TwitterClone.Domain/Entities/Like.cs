@@ -5,6 +5,9 @@
         private Guid _userId;
         private Guid _tweetId;
         private DateTime _likeAt;
+        public Like() { 
+            _userId = Guid.NewGuid();
+        }
         public Guid UserId { 
             get { return _userId; }
         }

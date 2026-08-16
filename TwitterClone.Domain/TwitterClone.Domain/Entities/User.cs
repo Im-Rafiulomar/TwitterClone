@@ -4,6 +4,9 @@
         private string _username;
         private string _email;
 
+        public User() {
+            _id = Guid.NewGuid();
+        }
         public Guid Id {
             get { return _id;  }
         }

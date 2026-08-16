@@ -6,6 +6,10 @@
         private Guid _tweetId;
         private string _bookmarkContent;
 
+        public BookMark() { 
+            _bookmarkId = Guid.NewGuid();
+        }
+
         public Guid BookId
         {
             get { return _bookmarkId; }
